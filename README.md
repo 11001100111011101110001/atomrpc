@@ -144,18 +144,20 @@ Successfully installed aiohttp-3.9.1 aiorpcX-0.22.1 aiosignal-1.3.1 async-timeou
 #### 3.3 修改host
 
 ```shell
-# 编辑 /etc/hosts
+# 编辑 /etc/hosts，无法在终端修改的可以用 sudo vim /etc/hosts ,然后输入密码即可，也可以直接去文件夹里改
 vim /etc/hosts
 
 # 在最后一行添加 127.0.0.1 localhost
 127.0.0.1 localhost
+
+# 保存，按esc后输入:wq
 ```
 
 #### 3.4 修改文件`.env`和`env_base.py`
 ##### 3.4.1 修改`.env`
 
 ````shell
-# 修改.env
+# 修改.env，无法在终端修改的可以用 sudo vim /etc/.env ,然后输入密码即可，也可以直接去文件夹里改
 vim .env
 
 # 修改DAEMON_URL，改成bitcore全节点配置里rpcauth的 用户名:密码@localhost:8332/
@@ -163,6 +165,8 @@ DAEMON_URL=http://electrumx:electrumx@localhost:8332/
 
 # 修改DB_DIRECTORY，改成放置data数据的绝对路径，建议放在SSD盘上
 DB_DIRECTORY=/Volumes/T7/electrumx_data
+
+# 保存，按esc后输入:wq
 ````
 
 ##### 3.4.2 修改`env_base.py`
@@ -176,6 +180,8 @@ vim electrumx/lib/env_base.py
 # 在 from os import environ 一行后边新增以下代码，用于加载配置文件
 from dotenv import load_dotenv
 load_dotenv()
+
+# 保存，按esc后输入:wq
 
 # 运行electrumx_server
 python electrumx_server
@@ -259,6 +265,8 @@ vim .env
 
 # 修改ELECTRUMX_PROXY_BASE_URL，保存即可
 ELECTRUMX_PROXY_BASE_URL=http://localhost:8080/proxy
+
+# 保存，按esc后输入:wq
 
 # 创建钱包，导入钱包等等操作请查看官方文档，https://github.com/atomicals/atomicals-js
 ```
