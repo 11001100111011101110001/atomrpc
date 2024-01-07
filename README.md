@@ -5,7 +5,7 @@
 ### 0. 必备品
 + bitcoin core全节点
 + nodeJs:https://nodejs.org/en
-+ vim或其他的编辑器
++ vim或其他的文本编辑器
 
 ### 1. 配置bitcore配置文件
 
@@ -63,7 +63,7 @@ rpcbind=0.0.0.0
 git clone git@github.com:atomicals/atomicals-electrumx.git
 # 进入代码目录
 cd atomicals-electrumx
-# 安装
+# 安装，这里有个"."，别遗漏了
 pip install .
 
 
@@ -150,7 +150,7 @@ vim /etc/hosts
 # 在最后一行添加 127.0.0.1 localhost
 127.0.0.1 localhost
 
-# 保存，按esc后输入:wq
+# 保存，按esc后输入:wq 回车
 ```
 
 #### 3.4 修改文件`.env`和`env_base.py`
@@ -166,7 +166,7 @@ DAEMON_URL=http://electrumx:electrumx@localhost:8332/
 # 修改DB_DIRECTORY，改成放置data数据的绝对路径，建议放在SSD盘上
 DB_DIRECTORY=/Volumes/T7/electrumx_data
 
-# 保存，按esc后输入:wq
+# 保存，按esc后输入:wq 回车
 ````
 
 ##### 3.4.2 修改`env_base.py`
@@ -181,7 +181,7 @@ vim electrumx/lib/env_base.py
 from dotenv import load_dotenv
 load_dotenv()
 
-# 保存，按esc后输入:wq
+# 保存，按esc后输入:wq 回车
 
 # 运行electrumx_server
 python electrumx_server
