@@ -62,6 +62,7 @@ rpcbind=0.0.0.0
 ```shell
 # 如果没有特别指定文件夹，代码默认直接下载在当前用户home目录下
 # 如果不会用git，可以直接下载到本地解压，https://github.com/atomicals/atomicals-electrumx
+# git clone https://github.com/atomicals/atomicals-electrumx.git
 git clone git@github.com:atomicals/atomicals-electrumx.git
 # 进入代码目录
 cd atomicals-electrumx
