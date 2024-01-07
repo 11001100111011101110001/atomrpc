@@ -53,7 +53,7 @@ rpcbind=0.0.0.0
 
 打开后如图所示：
 
-![image-20240107184549635](https://github.com/11001100111011101110001/atomrpc/assets/20775615/be2f5173-da32-405a-98e7-e17b3b1c4c6a)
+![image](https://github.com/11001100111011101110001/atomrpc/assets/20775615/f25be154-4d70-425d-a3c4-c16d5a74dde1)
 
 #### 3.2 安装electrumx server
 
