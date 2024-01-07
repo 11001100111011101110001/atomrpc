@@ -151,7 +151,7 @@ vim /etc/hosts
 127.0.0.1 localhost
 ```
 
-#### 3.4 修改配置文件
+#### 3.4 修改文件`.env`和`env_base.py`
 
 ````shell
 # 修改.env
@@ -163,7 +163,7 @@ DAEMON_URL=http://electrumx:electrumx@localhost:8332/
 # 修改DB_DIRECTORY，改成放置data数据的绝对路径，建议放在SSD盘上
 DB_DIRECTORY=/Volumes/T7/electrumx_data
 
-# 修改env_base
+# 修改env_base.py
 vim electrumx/lib/env_base.py
 
 # 在 from os import environ 一行后边新增以下代码，用于加载配置文件
