@@ -187,6 +187,7 @@ load_dotenv()
 # 保存，按esc后输入:wq 回车
 
 # 运行electrumx_server
+# 直接运行 python electrumx_server & 也可，不会占用终端，程序会在后台运行，就是看不到输出日志，建议跑通流程再这么干
 python electrumx_server
 
 # 输出内容大致如下，只要不出现ERROR，问题不大。
@@ -226,6 +227,8 @@ INFO:BlockProcessor:our height: 1,059 daemon: 824,721 UTXOs 0MB hist 0MB
 git clone git@github.com:atomicals/electrumx-proxy.git
 cd electrumx-proxy
 npm install
+
+# 直接运行 npm run dev & 也可，不会占用终端，程序会在后台运行，就是看不到输出日志，建议跑通流程再这么干
 npm run dev
 
 # 输出内容如下
