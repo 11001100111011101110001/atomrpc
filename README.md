@@ -163,7 +163,7 @@ vim .env
 # 修改DAEMON_URL，改成bitcore全节点配置里rpcauth的 用户名:密码@localhost:8332/
 DAEMON_URL=http://electrumx:electrumx@localhost:8332/
 
-# 修改DB_DIRECTORY，改成放置data数据的绝对路径，建议放在SSD盘上
+# 修改DB_DIRECTORY，改成放置data数据的绝对路径（新安装节点的新建一个文件夹，之前已建立过节点的直接填写以前的data文件夹路径即可），建议放在SSD盘上
 DB_DIRECTORY=/Volumes/T7/electrumx_data
 
 # 保存，按esc后输入:wq 回车
