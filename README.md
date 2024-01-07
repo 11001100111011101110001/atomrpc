@@ -7,7 +7,9 @@
 + nodeJs:https://nodejs.org/en
 + vim或其他的文本编辑器
 
-### 1. 配置bitcore配置文件
+### 1. 编辑bitcore配置文件
+
+![image](https://github.com/11001100111011101110001/atomrpc/assets/20775615/271b7280-b16b-46c4-b716-d864725d2164)
 
 ```bash
 server=1
