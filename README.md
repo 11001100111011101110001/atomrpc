@@ -36,7 +36,7 @@ rpcbind=0.0.0.0
 
 ![image-20240107183045863](https://github.com/11001100111011101110001/atomrpc/assets/20775615/6e59c477-29e9-42d4-a704-73a08de174d8)
 
-#### 2.2 安装libcxx、leveldb、python-leveldb、plyvel
+#### 2.2 安装libcxx(14.0.6)、leveldb(1.23)、python-leveldb(0.201)、plyvel(1.5)
 
 这里以leveldb为例：
 
