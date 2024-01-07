@@ -35,7 +35,7 @@ rpcbind=0.0.0.0
 
 #### 2.1 建立新的`Python`环境
 
-+ `python`版本：取一个自己喜欢的环境名，`python版本`建议选择`3.10`，因为安装会用到`pysha3`模块，但是`pysha3`模块与3.11及以上版本不兼容。
++ `python`版本：取一个自己喜欢的环境名，`python版本`建议选择`3.8`~`3.10`，因为安装会用到`pysha3`模块，但是`pysha3`模块与3.11及以上版本不兼容。
 
 ![image-20240107183045863](https://github.com/11001100111011101110001/atomrpc/assets/20775615/6e59c477-29e9-42d4-a704-73a08de174d8)
 
@@ -152,6 +152,7 @@ vim /etc/hosts
 ```
 
 #### 3.4 修改文件`.env`和`env_base.py`
+##### 3.4.1 修改`.env`
 
 ````shell
 # 修改.env
@@ -162,7 +163,13 @@ DAEMON_URL=http://electrumx:electrumx@localhost:8332/
 
 # 修改DB_DIRECTORY，改成放置data数据的绝对路径，建议放在SSD盘上
 DB_DIRECTORY=/Volumes/T7/electrumx_data
+```
 
+##### 3.4.2 修改`env_base.py`
+
+文件路径：atomicals-electrumx/electrumx/lib/env_base.py
+
+```shell
 # 修改env_base.py
 vim electrumx/lib/env_base.py
 
