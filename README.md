@@ -39,15 +39,11 @@ rpcbind=0.0.0.0
 
 ![image-20240107183045863](https://github.com/11001100111011101110001/atomrpc/assets/20775615/6e59c477-29e9-42d4-a704-73a08de174d8)
 
-#### 2.2 安装snappy(1.1.10)、libcxx(14.0.6)、leveldb(1.23)、python-leveldb(0.201)、plyvel(1.5)
+#### 2.2 安装snappy(1.1.10)、libcxx(14.0.6)、leveldb(1.23)、python-leveldb(0.201)、plyvel(1.5)、python-dotenv(0.21.0)
 
 这里以leveldb为例：
 
 ![image-20240107183900798](https://github.com/11001100111011101110001/atomrpc/assets/20775615/e487332a-de57-4ca6-b766-b81a952b8b78)
-
-#### 2.3 安装python-dotenv
-
-![image-20240107184052314](https://github.com/11001100111011101110001/atomrpc/assets/20775615/2faa7fd3-8249-436d-b7d4-1690f7887f3f)
 
 ### 3. 安装electrumx server
 
