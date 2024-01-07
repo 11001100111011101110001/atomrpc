@@ -1,12 +1,10 @@
-## 先决条件
+## Mac ATOM私有节点搭建-无docker版
 
 + bitcoin core全节点
 + nodeJs:https://nodejs.org/en
 + vim或其他的编辑器
 
-
-
-#### 1. 配置bitcore配置文件
+### 1. 配置bitcore配置文件
 
 ```bash
 server=1
@@ -27,12 +25,12 @@ rpcallowip=192.168.0.0/16
 rpcbind=0.0.0.0
 ```
 
-#### 2. 安装anaconda
+### 2. 安装anaconda
 
 + 下载链接：https://www.anaconda.com/download
 + `anaconda`是`python`的可视化包管理器，对新手友好，一键安装依赖，而且可以隔离`python`环境，不需要的时候直接一键全部删除，不需要学会如何清理和卸载`python模块`。
 
-##### 2.1 建立新的`Python`环境
+#### 2.1 建立新的`Python`环境
 
 + `python`版本：取一个自己喜欢的环境名，`python版本`建议选择`3.10`，因为安装会用到`pysha3`模块，但是`pysha3`模块与3.11及以上版本不兼容。
 
@@ -42,14 +40,13 @@ rpcbind=0.0.0.0
 
 ![image-20240107183900798](https://github.com/11001100111011101110001/atomrpc/assets/20775615/e487332a-de57-4ca6-b766-b81a952b8b78)
 
-
 #### 2.3 安装python-dotenv
 
 ![image-20240107184052314](https://github.com/11001100111011101110001/atomrpc/assets/20775615/2faa7fd3-8249-436d-b7d4-1690f7887f3f)
 
-#### 3. 开始安装Atom RPC节点
+### 3. 开始安装Atom RPC节点
 
-##### 3.1 使用新建的Python环境打开终端
+#### 3.1 使用新建的Python环境打开终端
 
 ![image-20240107184425876](https://github.com/11001100111011101110001/atomrpc/assets/20775615/c2a1f88a-a7c5-4f81-91d7-0e14f5cc117c)
 
@@ -57,7 +54,7 @@ rpcbind=0.0.0.0
 
 ![image-20240107184549635](https://github.com/11001100111011101110001/atomrpc/assets/20775615/be2f5173-da32-405a-98e7-e17b3b1c4c6a)
 
-##### 3.2 安装electrumx server
+#### 3.2 安装electrumx server
 
 ```shell
 # 如果没有特别指定文件夹，代码默认直接下载在当前用户home目录下
@@ -143,7 +140,7 @@ Installing collected packages: pysha3, pylru, plyvel, krock32, websockets, regex
 Successfully installed aiohttp-3.9.1 aiorpcX-0.22.1 aiosignal-1.3.1 async-timeout-4.0.3 attrs-23.2.0 cbor2-5.5.1 e-x-1.16.0 frozenlist-1.4.1 idna-3.6 krock32-0.1.1 merkletools-1.0.3 multidict-6.0.4 plyvel-1.5.0 pylru-1.2.1 pysha3-1.0.2 regex-2023.12.25 websockets-12.0 yarl-1.9.
 ```
 
-##### 3.3 修改host
+#### 3.3 修改host
 
 ```shell
 # 编辑 /etc/hosts
@@ -153,7 +150,7 @@ vim /etc/hosts
 127.0.0.1 localhost
 ```
 
-##### 3.4 修改配置文件
+#### 3.4 修改配置文件
 
 ````shell
 # 修改.env
@@ -205,7 +202,7 @@ INFO:BlockProcessor:our height: 1,059 daemon: 824,721 UTXOs 0MB hist 0MB
 ...
 ````
 
-#### 4. 安装proxy
+### 4. 安装proxy
 
 ```shell
 # 安装proxy，如果不会用git，可以直接下载到本地解压，https://github.com/atomicals/electrumx-proxy
@@ -232,7 +229,7 @@ Listening: http://0.0.0.0:8080
 ...
 ```
 
-#### 5. 查看本地节点状态
+### 5. 查看本地节点状态
 
 访问：http://localhost:8080/proxy/health 即可查看节点状态，当区块同步完成时页面返回如下内容：
 
@@ -240,7 +237,7 @@ Listening: http://0.0.0.0:8080
 {"success":true,"health":true}
 ```
 
-#### 6. 安装`atomicals-js`
+### 6. 安装`atomicals-js`
 
 ```shell
 # cd到想要安装的路径
