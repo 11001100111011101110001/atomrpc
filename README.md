@@ -234,7 +234,7 @@ Listening: http://0.0.0.0:8080
 
 #### 5. 查看本地节点状态
 
-访问：http://localhost:8080/proxy/health即可查看节点状态，当区块同步完成时页面返回如下内容：
+访问：http://localhost:8080/proxy/health 即可查看节点状态，当区块同步完成时页面返回如下内容：
 
 ```json
 {"success":true,"health":true}
