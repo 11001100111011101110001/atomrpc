@@ -187,7 +187,7 @@ load_dotenv()
 # 保存，按esc后输入:wq 回车
 
 # 运行electrumx_server
-# python electrumx_server >> electrumx_server.log &
+# nohup python electrumx_server > electrumx_server.log 2>&1 &
 # 以上命令不会占用终端，程序会在后台运行，终端看不到输出日志，日志会保存在 `atomicals-electrumx` 文件夹下的 `electrumx_server.log` 文件中，建议跑通流程后再这么干。
 python electrumx_server
 
