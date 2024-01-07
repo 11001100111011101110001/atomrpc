@@ -1,4 +1,4 @@
-![image](https://github.com/11001100111011101110001/atomrpc/assets/20775615/b96f83b3-de7a-461b-aef9-e465f5b53415)## Mac ATOM私有节点搭建-无docker版
+## Mac ATOM私有节点搭建-无docker版
 
 + bitcoin core全节点
 + nodeJs:https://nodejs.org/en
