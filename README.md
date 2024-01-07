@@ -1,4 +1,4 @@
-## Mac ATOM私有节点搭建-无docker版
+![image](https://github.com/11001100111011101110001/atomrpc/assets/20775615/b96f83b3-de7a-461b-aef9-e465f5b53415)## Mac ATOM私有节点搭建-无docker版
 
 + bitcoin core全节点
 + nodeJs:https://nodejs.org/en
@@ -36,7 +36,9 @@ rpcbind=0.0.0.0
 
 ![image-20240107183045863](https://github.com/11001100111011101110001/atomrpc/assets/20775615/6e59c477-29e9-42d4-a704-73a08de174d8)
 
-#### 2.2 安装leveldb、python-leveldb、plyvel
+#### 2.2 安装libcxx、leveldb、python-leveldb、plyvel
+
+这里以leveldb为例：
 
 ![image-20240107183900798](https://github.com/11001100111011101110001/atomrpc/assets/20775615/e487332a-de57-4ca6-b766-b81a952b8b78)
 
