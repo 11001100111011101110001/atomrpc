@@ -1,6 +1,6 @@
 ## Mac ATOM私有节点搭建-无docker版
 
-> 我的MacBook是19年的Touch Bar版本，不舍得换，跑docker又太占用资源，所以琢磨了一下直接原生跑。又希望电脑软件不那么乱，就想到了anaconda。
+> 我的MacBook是19年的Touch Bar版本，不舍得换，docker对于我的电脑来说太占用资源，所以琢磨了一下直接原生跑。又希望电脑软件不那么乱，就想到了anaconda。
 
 ### 0. 必备品
 + bitcoin core全节点
