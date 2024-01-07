@@ -28,7 +28,7 @@ rpcbind=0.0.0.0
 ### 2. 安装anaconda
 
 + 下载链接：https://www.anaconda.com/download
-+ `anaconda`是`python`的可视化包管理器，对新手友好，一键安装依赖，而且可以隔离`python`环境，不需要的时候直接一键全部删除，不需要学会如何清理和卸载`python模块`。
++ `anaconda`是`python`的可视化包管理器，对新手友好，一键安装依赖，而且可以隔离`python`环境，不需要的时候直接一键全部删除，无需学会如何清理和卸载`python模块`。
 
 #### 2.1 建立新的`Python`环境
 
