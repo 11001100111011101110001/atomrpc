@@ -163,13 +163,13 @@ DAEMON_URL=http://electrumx:electrumx@localhost:8332/
 
 # 修改DB_DIRECTORY，改成放置data数据的绝对路径，建议放在SSD盘上
 DB_DIRECTORY=/Volumes/T7/electrumx_data
-```
+````
 
 ##### 3.4.2 修改`env_base.py`
 
 文件路径：atomicals-electrumx/electrumx/lib/env_base.py
 
-```shell
+````shell
 # 修改env_base.py
 vim electrumx/lib/env_base.py
 
