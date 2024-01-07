@@ -229,8 +229,9 @@ git clone git@github.com:atomicals/electrumx-proxy.git
 cd electrumx-proxy
 npm install
 
-# nohup npm run dev > electrumx_proxy.log 2>&1 &
+# nohup npm run start > electrumx_proxy.log 2>&1 &
 # 以上命令不会占用终端，关闭终端后程序依旧会在后台运行，终端看不到输出日志，日志会保存在 `electrumx-proxy` 文件夹下的 `electrumx_proxy.log` 文件中，建议跑通流程后再这么干。
+# npm run start
 npm run dev
 
 # 输出内容如下
