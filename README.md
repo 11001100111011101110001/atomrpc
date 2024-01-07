@@ -219,6 +219,8 @@ INFO:SessionManager:RPC server listening on localhost:8000
 INFO:Prefetcher:catching up to daemon height 824,721 (823,672 blocks behind)
 INFO:BlockProcessor:our height: 1,059 daemon: 824,721 UTXOs 0MB hist 0MB
 ...
+
+# 没有报错的话就可以`control c`退出进程，用`nohup python electrumx_server > electrumx_server.log 2>&1 &`命令愉快的玩耍了
 ````
 
 ### 4. 安装electrumx proxy
@@ -250,6 +252,8 @@ process.env.ELECTRUMX_PORT 50010
 process.env.ELECTRUMX_HOST 127.0.0.1
 Listening: http://0.0.0.0:8080
 ...
+
+# 没有报错的话就可以`control c`退出进程，用`nohup npm run start > electrumx_proxy.log 2>&1 &`命令愉快的玩耍了
 ```
 
 ### 5. 查看本地节点状态
@@ -283,4 +287,4 @@ ELECTRUMX_PROXY_BASE_URL=http://localhost:8080/proxy
 ## 参考资料
 
 + NEXTDAO：https://github.com/Next-DAO/atomicals-electrumx-proxy-docker
-+ https://www.ordinalsworld.io/p/dockerpythonatom
++ Windows版：https://www.ordinalsworld.io/p/dockerpythonatom
