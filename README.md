@@ -188,7 +188,7 @@ load_dotenv()
 
 # 运行electrumx_server
 # nohup python electrumx_server > electrumx_server.log 2>&1 &
-# 以上命令不会占用终端，程序会在后台运行，终端看不到输出日志，日志会保存在 `atomicals-electrumx` 文件夹下的 `electrumx_server.log` 文件中，建议跑通流程后再这么干。
+# 以上命令不会占用终端，关闭终端后程序依旧会在后台运行，终端看不到输出日志，日志会保存在 `atomicals-electrumx` 文件夹下的 `electrumx_server.log` 文件中，建议跑通流程后再这么干。
 python electrumx_server
 
 # 输出内容大致如下，只要不出现ERROR，问题不大。
@@ -228,6 +228,9 @@ INFO:BlockProcessor:our height: 1,059 daemon: 824,721 UTXOs 0MB hist 0MB
 git clone git@github.com:atomicals/electrumx-proxy.git
 cd electrumx-proxy
 npm install
+
+# nohup npm run dev > electrumx_proxy.log 2>&1 &
+# 以上命令不会占用终端，关闭终端后程序依旧会在后台运行，终端看不到输出日志，日志会保存在 `electrumx-proxy` 文件夹下的 `electrumx_proxy.log` 文件中，建议跑通流程后再这么干。
 npm run dev
 
 # 输出内容如下
