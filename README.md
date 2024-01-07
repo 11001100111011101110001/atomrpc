@@ -2,6 +2,7 @@
 
 > 我的MacBook是19年的Touch Bar版本，不舍得换，跑docker又太占用资源，所以琢磨了一下直接原生跑。又希望电脑软件不那么乱，就想到了anaconda。
 
+### 0. 必备品
 + bitcoin core全节点
 + nodeJs:https://nodejs.org/en
 + vim或其他的编辑器
